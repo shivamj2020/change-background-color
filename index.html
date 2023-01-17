@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background changer</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 20px 100px;
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+    }
+    p{
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .btn{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border: solid green;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    #black{
+        background-color: rgb(29, 27, 27);
+    }
+
+     #white{
+        background-color:  rgb(248, 243, 243);
+    }
+    
+    #pink{
+        background-color: rgb(190, 14, 43);
+    }
+
+    #blue{
+        background-color: rgb(20, 20, 250);
+    }
+    #colorSwitcher{
+        text-align: right;
+    }
+    
+</style>
+<body>
+    <div id="colorSwitcher"> 
+        <span class="btn" id="black" onclick="changeBackGround('rgb(29, 27, 27)')"></span>
+        <span class="btn" id="white" onclick="changeBackGround('rgb(248, 243, 243)')"></span>
+        <span class="btn" id="blue"  onclick="changeBackGround('rgb(20, 20, 250)')"></span>
+        <span class="btn" id="pink"  onclick="changeBackGround(' rgb(190, 14, 43)')"></span>
+    </div>
+    <h1 class="ch">
+        About Us
+    </h1>
+    <img src="https://cdn.shopify.com/s/files/1/2628/9270/files/mango-2400_cab7a249-532b-46db-b779-5e6fb243b63f.jpg?v=1630140424" alt="">
+<p class="ch">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, nulla quo, eos doloribus vitae quisquam sunt, maiores et dolore dolor facere. Sapiente, quasi assumenda consequuntur officiis necessitatibus impedit accusantium numquam sint odio natus officia esse temporibus, magni a quidem ducimus quibusdam ut! Aperiam voluptate nobis itaque, ullam exercitationem cum laboriosam eaque esse adipisci dolorum velit vitae quis molestias assumenda corporis ex earum quia error deserunt provident. Iste, corrupti? Incidunt molestiae vero aliquid laudantium tempora omnis sunt cum eum maxime minima, praesentium tempore soluta tenetur fugiat quod qui natus similique est. Voluptate, eius explicabo sit libero dolor debitis doloremque aliquid quia laborum, earum ex. Harum error dolorem voluptates doloribus, dolorum officia repellat? Tenetur recusandae fugiat corrupti quo eligendi veritatis ipsum aut explicabo reprehenderit? Esse, quisquam laborum? Incidunt aliquid totam dolor possimus quasi eos culpa reiciendis expedita facilis ducimus vel magni harum atque velit, ad itaque in cumque. Temporibus magni alias delectus reprehenderit recusandae quasi, sed molestias, error amet, eum tempora debitis excepturi eaque itaque exercitationem consectetur unde. Consequuntur illum architecto, at dolor iste cumque dolorem dicta odit nemo ducimus obcaecati ea atque fugit molestias non officia doloribus velit quam iure voluptate totam? Molestias vitae ex consequuntur illo, quasi modi voluptatum nisi voluptate rem aspernatur magni animi consectetur accusantium. Iusto, officia dolorem! Rem vel, consectetur aperiam autem esse ea perspiciatis ab? Itaque tenetur quas molestiae eos nam qui dolorum, consequatur repudiandae at, a vitae saepe, suscipit harum reprehenderit eius sequi! Vero, recusandae aperiam qui itaque fuga saepe aspernatur eum sequi ab optio minima dolorem soluta consequuntur sunt, reprehenderit velit corrupti et veniam aliquid ex sit asperiores. Vitae, modi corrupti? Temporibus fugit, omnis nostrum voluptate error quis? Repudiandae, voluptates id. Deleniti consequuntur ut voluptate quia debitis assumenda. In suscipit aspernatur dolore eius, ipsam, sed ratione facilis quis quo voluptatem exercitationem illum a cumque ullam impedit sunt quaerat labore praesentium at optio error! Quam quod sequi vero, facilis ipsam velit quasi architecto possimus deleniti hic provident accusantium optio neque modi amet omnis deserunt atque soluta ipsa veritatis, nesciunt tenetur. Vero ipsum consequatur qui? In asperiores fuga explicabo incidunt doloribus quaerat, voluptatibus ipsum adipisci cupiditate possimus dolore, atque fugit facere, a mollitia ea earum inventore ex ipsam voluptas. Minima, enim dolor tempore cupiditate in omnis architecto ab. A perferendis architecto vitae hic est incidunt cum qui autem animi eum aliquid optio distinctio quo voluptatem, similique expedita, blanditiis officia minima sapiente harum culpa odit deserunt dolor!</p>
+</body>
+<script>
+    function changeBackGround(color){
+        
+        document.body.style.backgroundColor = color;
+        let txt= document.getElementsByClassName("ch");
+
+        if(color == "rgb(29, 27, 27)"){
+            for(let el of txt){
+                el.style.color="white";
+                }
+        }
+       else{
+            for(let el of txt){  
+            el.style.color="black";
+        }
+            }
+
+    }
+</script>
+</html>
